@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>coolstarz | homepage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        [class*="col-"] {
+            width: 100%;
+            float: left;
+        }
+@media only screen and (min-width: 480px) {
+            .col-md-1 {
+                width: 8.33333333%
+            }
+            .col-md-2 {
+                width: 16.66666667%
+            }
+            .col-md-3 {
+                width: 25%
+            }
+            .col-md-4 {
+                width: 33.33333333%
+            }
+            .col-md-5 {
+                width: 41.66666667%
+            }
+            .col-md-6 {
+                width: 50%
+            }
+            .col-md-7 {
+                width: 58.33333333%
+            }
+            .col-md-8 {
+                width: 66.66666667%
+            }
+            .col-md-9 {
+                width: 75%
+            }
+            .col-md-10 {
+                width: 83.33333333%
+            }
+            .col-md-11 {
+                width: 91.66666667%
+            }
+            .col-md-12 {
+                width: 100%
+            }
+        }
+@media only screen and (min-width: 768px) {
+            .col-l-1 {
+                width: 8.33333333%
+            }
+            .col-l-2 {
+                width: 16.66666667%
+            }
+            .col-l-3 {
+                width: 25%
+            }
+            .col-l-4 {
+                width: 33.33333333%
+            }
+            .col-l-5 {
+                width: 41.66666667%
+            }
+            .col-l-6 {
+                width: 50%
+            }
+            .col-l-7 {
+                width: 58.33333333%
+            }
+            .col-l-8 {
+                width: 66.66666667%
+            }
+            .col-l-9 {
+                width: 75%
+            }
+            .col-l-10 {
+                width: 83.33333333%
+            }
+            .col-l-11 {
+                width: 91.66666667%
+            }
+            .col-l-12 {
+                width: 100%
+            }
+        }
+        /* design the layout */
+        header, footer {
+            padding: 15px;
+            color: white;
+        }
+        .main, .aside {
+            padding: 15px;
+        }
+        .main > p {
+            text-align: justify;
+        }
+        .aside > div {
+            background: gold;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 15px;
+
+        }
+        header {
+            background-image: url(images/cool.jpg);
+            Color: gold;
+        }
+
+        .menu {
+            padding: 10px;
+        }
+        .menu > ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        .menu > ul > li {
+            background: #903C56;
+            width: 100%;
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 120%;
+            transition-duration: 1s;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .dd {
+            position: relative;
+            display: inline-block;
+        }
+        .dd-btn {
+            padding: 15px;
+            text-align: center;
+            background: #173459;
+            border: none;
+            width: 300px;
+            color: white;
+
+        }
+        .dd-content {
+            position: absolute;
+            width: 100%;
+            box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+            height: 0px;
+            transition: height 2s;
+            overflow: hidden;
+        }
+        .dd:hover > .dd-content {
+            height: 390px;
+        }
+        .dd-content > a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        #shift:hover {
+            color: red;
+        }
+        #shift {
+            margin-left: 45px;
+        }
+
+@keyframes myAnimation {
+            0% {
+                background: red;
+                top: 0px;
+            }
+            25% {
+                background: brown;
+                top: 0px;
+            }
+            75% {
+                background-image: linear-gradient(to right, red, orange,green, blue, indigo, violet);
+                top: 0px;
+            }
+            100% {
+                background: blue;
+                top: 0px;
+            }
+        }
+        .dd-btn {
+            animation-name: myAnimation;
+            animation-iteration-count: infinite;
+            transition-duration: 1s;
+            background: gold;
+            animation-duration: 1s;
+            width: 300px;
+            height: 0px;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+        #coolstarz {
+            font-family: times;
+        }
+        #sift {
+            margin-top: 360px;
+        }
+        b {
+            color: black;
+        }
+        b:hover {
+            color: red;
+            font-size: 20px;
+            font-family: courier;
+            transition-duration: 4s;
+        }
+        footer {
+            background-image: url(images/cool.jpg);
+        }
+        #HOE {
+            color: green;
+            text-align: center;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        #coolstarz {
+            text-align: center;
+        }
+        .image-description {
+            padding: 0 15px 15px 15px;
+            text-align: center;
+            background: white;
+            font-size: 30px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a {
+            color: white;
+            font-size: 25px;
+            font-family: serif;
+        }
+        #info {
+            font-size: 25.5px;
+        }
+        #pp {
+            float: right;
+            margin-top: -30px;
+        }
+        #contact {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #facebook {
+            width: 50px;
+        }
+        #whatsapp {
+            width: 52px;
+            margin-left: 70px;
+            margin-top: -55px;
+        }
+        #x {
+            width: 50.5px;
+            margin-left: 150px;
+            margin-top: -50px;
+            border-radius: 60px;
+        }
+        #gmail {
+            width: 50px;
+            margin-left: 230px;
+            margin-top: -50px;
+        }
+        #telegram {
+            width: 50px;
+            margin-left: 300px;
+            margin-top: -45px;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            font-family: courier;
+            font-size: 25px;
+            border-radius: 15px;
+        }
+        button {
+            height: 28px;
+            background: transparent;
+            border-radius: 5px;
+        }
+        footer {
+            color: gold;
+        }
+		legend {
+				text-align:center;
+		}
+		#news {
+				width:25px;
+		}
+				#video {
+						width:25px;
+        </style>
+    </head>
+    <body>
+      
+        <div id="header">
+            <header>
+                <div id="coolstarz">
+                    <h1>COOLSTARZ.COM</h1>
+                </div>
+            </header>
+        </div>
+        <hr><hr>
+
+        <div id="HOE">
+            <h2>
+
+                home of entertainment
+            </h2>
+        </div>
+        <hr><hr>
+        <form>
+            <input type="search" placeholder="Enter Your Search Here" required>
+            <button type="submit">Search</button>
+        </form>
+        <p></p>
+        <div class="row">
+            <div id="shift">
+                <div class="dd">
+                    <button class="dd-btn">CLICK ME</button>
+                    <div class="dd-content">
+
+                        <a href="musics.html"><img src="icons/music.png" alt="music">MUSICS</a>
+                    		
+                        <a href="videos.html">VIDEOS</a>
+                    		
+                        <a href="games.html"><img src="icons/games.png" alt="games">GAMES</a>
+                    		
+                        <a href="news.html">NEWS</a>
+                    		
+                        <a href="subscriptions.html"><img src="icons/subscription.png" alt="subscriptions">SUBSCRIPTIONS</a>
+                        <a href="recommend.html"><img src="icons/recommend.png" alt="recommend">RECOMMENDEDS</a>
+                        <a href="download.html"><img src="icons/download.png" alt="download">DOWNLOADS</a>
+                    		<a href="photos.html">PHOTOS</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-l-6 main">
+                <div id="sift">
+
+                </div>
+            </div>
+            <div class="col-md-12 col-l-3 aside">
+                <div>
+
+                    <fieldset>
+                        <legend>
+                            <b>
+                                meet our Afro-Beat artists
+                            </b>
+                        </legend>
+                        <img src="images/burna.jpg" alt="Burna Boy">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            Damini Ebunoluwa Ogulu MFR  (born 2 July 1991), known professionally as Burna Boy , is a Nigerian singer, songwriter and record producer. He rose to stardom in 2012 after releasing "Like to Party", the lead single from his debut studio album L.I.F.E (2013). In 2017, Burna Boy signed with Bad Habit/Atlantic Records in the United States and Warner Music Group internationally. His third studio album
+                            Outside (2018) marked his major-label debut.
+                        </details>
+                        <p class="image-description">
+                            Burna Boy
+                        </p>
+                        <img src="images/davido.jpg" alt="davido">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            David Adedeji Adeleke OON (born November 21, 1992), who is professionally known as Davido , is an American-born Nigerian singer, songwriter and record producer .Davido was born in
+                            Atlanta , Georgia, United States , and raised in Lagos , Nigeria . He made his music debut as a member of the group KB International. Davido studied business administration at Oakwood University before dropping out to make beats and record vocal references. He rose to fame after releasing " Dami Duro", the second single from his debut studio album Omo Baba Olowo (2012), from which six additional singles—"Back When", "Ekuro", "Overseas", "All of You", "Gbon Gbon" and "Feel Alright"—were taken. In 2012, Davido won the Next Rated award at The Headies . Between 2013 and 2015, he released the hit singles " Gobe ", "One of a Kind", " Skelewu ", " Aye ", "Tchelete (Goodlife)", "Naughty", "Owo Ni Koko", "The Sound" and "The Money"
+                        </details>
+                        <p class="image-description">
+                            Davido
+                        </p>
+                        <img src="images/fireboy.jpg" alt="fireboy">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+                            Adedamola Oyinlola Adefolahan (born 5 February 1996), ⁰a4known professionally as
+                            Fireboy DML, is a Nigerian singer. He is signed to YBNL Nation , a record label founded by Nigerian rapper Olamide. [3] His debut studio album Laughter, Tears and Goosebumps was released in 2019. [3] He won Listener's Choice and was nominated for Song of the Year for "Jealous" at the 2020 Soundcity MVP Award  Festival"'
+
+                        </details>
+                        <p class="image-description">
+                            Fireboy
+                        </p>
+                        <img src="images/kizz.jpg" alt="kizz daniel">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            Oluwatobiloba Daniel Anidugbe (born 1 May 1994), who is better known as Kizz Daniel (formerly Kiss Daniel), is a Nigerian singer and songwriter. He rose to fame in 2014 with his debut single, " Woju ".  He signed a record deal with G-Worldwide Entertainment in 2013, but left the label following a publicized contract dispute and court case. He founded the Fly Boy Inc record label in November 2017.
+
+                        </details>
+                        <p class="image-description">
+                            Kizz Daniel
+                        </p>
+                        <img src="images/fave.jpg" alt="Fave">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+                            Fave is a budding musician and songwriter from Nigeria. She is widely recognized for her hit songs Baby Riddim and Beautifully. She has also released several other songs such as Obsessed, Be With You, and Scatta Scatta.
+
+
+                        </details>
+                        <p class="image-description">
+                            Fave
+                        </p>
+                        <img src="images/ayra.jpg" alt="Ayra Starr">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            Oyinkansola Sarah Aderibigbe (born 14 June 2002), known professionally as Ayra Starr , is a Beninese-born Nigerian singer. She began a fashion career at the age of 16 with Quove Model Management before deciding to pursue a career in music. After covering several songs by popular artists on Instagram, she posted her first original song on her page in December 2019. This brought her to the attention of record executive Don Jazzy , who signed her to his record label Mavin Records .
+
+
+                        </details>
+                        <p class="image-description">
+                            Ayra Starr
+                        </p>
+                        <img src="images/asake.jpg" alt="Asake">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+
+                            Asake studied Theatre and Dramatic Arts at Obafemi Awolowo University in Nigeria . He began releasing music in 2017, and his career took off in 2022 with the single "Mr. Money", followed by a remix with Zlatan and Peruzzi. In February 2022, fellow Nigerian artist Olamide signed Asake to his YBNL Records imprint.
+
+                        </details>
+                        <p class="image-description">
+                            Asake
+                        </p>
+                        <img src="images/wizkid.jpg" alt="Wizkid">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            Ayodeji Ibrahim Balogun (born 16 July 1990), known professionally as Wizkid,   is a Nigerian singer and songwriter. A prominent figure in the modern-day afrobeats music scene, Wizkid is regarded as one of the biggest and most influential African artists of all time.  He began recording music at the age of 11 and released a collaborative album with the Glorious Five (5), a group he and a couple of his church friends formed. In 2009, Wizkid signed a record deal with Banky W 's Empire Mates Entertainment (E.M.E). He later rose to the limelight after releasing " Holla at Your Boy ", the lead single from his debut studio album,
+                            Superstar (2011), which also spawned the singles " Tease Me/Bad Guys " and " Don't Dull "."
+                        </details>
+                        <p class="image-description">
+                            Wizkid
+                        </p>
+                        <img src="images/rema.jpg" alt="rema">
+                        <details>
+
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            Divine Ikubor (born 1 May 2000), known professionally as Rema , is a Nigerian rapper, singer and songwriter. He gained initial recognition with the release of "Dumebi" in 2019. Rema was signed to Jonzing World , a record label owned by Nigerian singer, D'Prince and affliates to Mavin Records .He is best known internationally for his 2022 hit single " Calm Down ". The remix with American singer
+                            Selena Gomez of which peaked at No. 3 on the
+                            Billboard Hot 100,  and led the U.S. Afrobeats Songs chart for a record-setting 58 weeks until it was surpassed by Tyla 's ' Water' on October 21, 2023.
+
+                        </details>
+                        <p class="image-description">
+                            Rema
+                        </p>
+                        <img src="images/tiwa.jpg" alt="Tiwa Savage">
+                        <details>
+                            <summary>
+                                ABOUT
+                            </summary>
+
+                            Tiwatope Savage is a Nigerian singer, songwriter, and actress . Born in Isale Eko, she relocated to London at the age of 11 for her secondary education. Five years later, she began her music career doing backup vocals for artists such as George Michael and Mary J. Blige.
+
+                        </details>
+                        <p class="image-description">
+                            Tiwa Savage
+                        </p>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="info">
+                MORE INFOS
+            </div>
+            <hr>
+            <div id="about">
+                <a href="about.html">About
+                    Us</a>
+            </div>
+            <div id="pp">
+                <a href="privacypolicy.html">
+                    Privacy Policy
+                </a>
+            </div>
+            <div id="t&c">
+                <a href="termsandcondition.html">
+                    Terms and Conditions
+                </a>
+            </div>
+            <div id="contact">
+                <a href="contactus.html">
+                    Contact Us
+                </a>
+            </div>
+            <hr>
+            OUR SOCIAL
+            <hr>
+            <div id="facebook">
+                <a href="https://www.facebook.com/jenboi.akintola"><img src="icons/facebook.jpg" alt="facebook"></a>
+            </div>
+            <div id="whatsapp">
+                <a href="https://wa.me//+2349039320695"><img src="icons/whatsapp.jpg" alt="whatsapp"></a>
+            </div>
+            <div id="x">
+                <a href="https://twitter.com"><img src="icons/x.jpg" alt="twitter"></a>
+            </div>
+            <div id="gmail">
+                <a href="mailto:jephthahjew@gmail.com"><img src="icons/gmail.jpg" alt="gmail"></a>
+            </div>
+            <div id="telegram">
+                <a href="https://t.me/09039320695"><img src="icons/telegram.jpg" alt="telegram"></a>
+            </div>
+        </footer>
+    </body>
+</html>
